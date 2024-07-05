@@ -1,3 +1,4 @@
+import 'package:example_1_animations/view/canvas_tutorial.dart';
 import 'package:example_1_animations/view/example_animation_2.dart';
 import 'package:example_1_animations/view/home_view.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ExampleAnimation2(),
+      home: const CanvasGuideView(),
     );
   }
 }

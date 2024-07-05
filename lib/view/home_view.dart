@@ -9,6 +9,12 @@ class HomeView extends StatefulWidget {
   State<HomeView> createState() => _HomeViewState();
 }
 
+extension on String {
+
+    static const hello = "Hello World";
+
+}
+
 class _HomeViewState extends State<HomeView> with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
   late Animation<double> _animation;
@@ -28,14 +34,16 @@ class _HomeViewState extends State<HomeView> with SingleTickerProviderStateMixin
     super.dispose();
   }
 
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey.withOpacity(0.1),
       appBar: AppBar(
         backgroundColor: Colors.grey.withOpacity(0.3),
-        title: const Text(
-          "Home View",
+        title:  Text(
+          "Hello world",
           style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,

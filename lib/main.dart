@@ -1,4 +1,5 @@
 import 'package:example_1_animations/view/Animations/animations.dart';
+import 'package:example_1_animations/view/Animations/eg_1.dart';
 import 'package:example_1_animations/view/canvas_tutorial.dart';
 import 'package:example_1_animations/view/example_animation_2.dart';
 import 'package:example_1_animations/view/home_view.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Animations(),
+      home: const LogoApp(),
     );
   }
 }
